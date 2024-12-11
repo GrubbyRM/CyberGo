@@ -14,6 +14,8 @@ func main() {
 		return c.String(http.StatusOK, "Hello World!")
 	})
 	storage.InitDB()
-	e.POST("/users", handlers.CreateUser)
+	e.GET("/users", handlers.ShowUsers)
+
+	// e.POST("/users", handlers.CreateUser)
 	e.Logger.Fatal(e.Start(":1331"))
 }

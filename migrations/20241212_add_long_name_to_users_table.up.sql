@@ -1,0 +1,2 @@
+ALTER TABLE users_table
+ADD COLUMN long_name VARCHAR(255) NOT NULL;
